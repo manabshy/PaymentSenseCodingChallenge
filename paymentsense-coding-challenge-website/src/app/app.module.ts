@@ -8,7 +8,7 @@ import { PaymentsenseCodingChallengeApiService } from './services';
 import { HttpClientModule } from '@angular/common/http';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CountriesListComponent } from './components/countries-list/countries-list.component';
-import { MatButtonModule, MatCardModule, MatCheckboxModule, MatIconModule, MatInputModule, MatListModule, MatPaginatorModule, MatSidenavModule, MatTableModule, MatToolbarModule } from '@angular/material';
+import { MatButtonModule, MatCardModule, MatCheckboxModule, MatDialog, MatDialogModule, MatIconModule, MatInputModule, MatListModule, MatPaginator, MatPaginatorModule, MatSidenavModule, MatTableModule, MatToolbarModule, MatTooltipModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -30,7 +30,9 @@ import { MatButtonModule, MatCardModule, MatCheckboxModule, MatIconModule, MatIn
     MatSidenavModule,
     MatToolbarModule,
     MatTableModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatTooltipModule,
+    MatDialogModule
   ],
   providers: [PaymentsenseCodingChallengeApiService],
   bootstrap: [AppComponent]
