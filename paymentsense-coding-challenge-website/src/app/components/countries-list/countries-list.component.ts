@@ -21,8 +21,8 @@ export class CountriesListComponent {
     .subscribe(response => {
       this.countries = response;
       this.dataSource = new MatTableDataSource(this.countries);
-      console.log(this.countries);
-
+      this.dataSource.paginator = this.paginator;
+      this.dataSource.sort = this.sort;
     });
 
   }
